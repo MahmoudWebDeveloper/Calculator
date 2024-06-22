@@ -1,0 +1,48 @@
+table,
+td {
+  border: solid;
+  background-color: white;
+  text-align: center;
+}
+td {
+  width: 3vw;
+  height: 3vw;
+  padding: 2px;
+  border: 2px solid rgb(75, 75, 75);
+}
+body {
+  background-color: #0060a6;
+  text-align: center;
+  font-family: cursive;
+}
+
+.x,
+.square {
+  background-color: #0060a6;
+  color: white;
+  border: black solid 2px;
+  font-weight: bold;
+}
+.first_row,
+.first_col {
+  background-color: orangered;
+  color: white;
+  border: black solid 2px;
+  font-weight: bold;
+}
+table {
+  margin: 50px auto;
+}
+.title {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+.controller {
+  background-color: white;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: #394461;
+        }
+
+        input {
+            background-color: #EAE3DB;
+            margin: 5px;
+            border-radius: 5px;
+            width: 90%;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #D13F30;
+            color: #FDFEFE;
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .user-input {
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 17px;
+        }
+
+        .container {
+            background-color: #252D44;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .result {
+            background-color: #181F32;
+            color: #FDFEFE;
+            padding: 5px;
+            text-align: right;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 30px;
+        }
+        .calc{
+            width: 50vw;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+
+        <h3 id="result" class="result">0</h3>
+        <div class="container">
+            <div class="user-input">
+                <input type="text" placeholder="0" id="num1">
+                <input type="text" placeholder="0" id="num2">
+            </div>
+            <div class="buttons">
+                <button onclick="Add()">Add</button>
+                <button onclick="Subtract()">Subtract</button>
+                <button onclick="Multiply()">Multiply</button>
+                <button onclick="divide()">Divide</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Add() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let result = num1 + num2;
+            document.getElementById("result").innerHTML = result;
+        }
+        function Subtract() {
+            let num1 = parseFloat(document.getElementById("num1").value) ;
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let result = num1 - num2;
+            document.getElementById("result").innerHTML = result;
+        }
+       function Multiply() {
+        let num1 = parseFloat(document.getElementById("num1").value) ;
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let result = num1 * num2;
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function divide() {
+            let num1 = parseFloat(document.getElementById("num1").value) ;
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let result = num1 / num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

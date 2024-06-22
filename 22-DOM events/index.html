@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .car {
+            position: relative;
+            background-color: aqua;
+        }
+
+        .car-door {
+            position: absolute;
+            top: 120px;
+            left: 270px;
+
+        }
+
+        .car-door-image {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<body>
+    <div class="car" id="car-bubble">
+        <img src="./car.png" alt="">
+        <div class="car-door" id="car-door-bubble">
+            <img class="car-door-image" src="./car-door.webp" alt="">
+        </div>
+    </div>
+    <div class="car" id="car-capture">
+        <img src="./car.png" alt="">
+        <div class="car-door" id="car-door-capture">
+            <img class="car-door-image" src="./car-door.webp" alt="">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

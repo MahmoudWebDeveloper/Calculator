@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queres</title>
+    <style>
+        .world {
+            display: none;
+        }
+
+        .salah {
+            position: fixed;
+            width: 230px;
+        }
+
+        .el-lemby {
+            position: fixed;
+            right: 0;
+            width: 250px;
+            margin-top: 15px;
+        }
+
+        .salah-postion {
+            position: fixed;
+            left: 50px;
+            top: 170px;
+        }
+
+        .ellempy-postion {
+            position: fixed;
+            right: 50px;
+            top: 160px;
+        }
+
+        .hidden-text {
+            display: none;
+        }
+
+        @media (max-width:600px) {
+            body {
+                background-color: greenyellow;
+            }
+
+            .world.image {
+                display: block;
+                margin: auto;
+            }
+
+            .salah {
+                display: none;
+            }
+
+            .salah-postion {
+                display: none;
+            }
+
+            .ellempy-postion {
+                display: none;
+            }
+
+            .world.text {
+                display: block;
+                text-align: center;
+            }
+
+            .el-lemby {
+                display: none;
+            }
+
+        }
+
+        @media(max-width:300px) {
+            body {
+                background-color: greenyellow;
+                text-align: center;
+            }
+
+            .hidden-text {
+                display: block;
+            }
+
+            .world.text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="world image" src="./World is so small.png" alt="">
+    <img class="salah" src="./Salah.png" alt="">
+    <img class="el-lemby" src="./El lemby.png" alt="">
+    <h1 class="salah-postion">أستاذ لمبي</h1>
+    <h1 class="ellempy-postion">صلاح إبن الناظر؟</h1>
+    <h1 class="world text">الدنيا ضيقة أوي يا جدعان</h1>
+    <h1 class="hidden-text">خلاص متقربش اكتر من كده ياا</h1>
+</body>
+</html>

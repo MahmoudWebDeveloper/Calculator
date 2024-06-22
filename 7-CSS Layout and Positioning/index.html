@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout and Positioning</title>
+    <style>
+        div{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+        }
+        #firstdiv{
+            display: none;
+            margin: auto;
+           max-width: 500px; 
+           border: red solid; 
+           height: 100px;
+        }
+        #Seconddiv{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        #thirddiv{
+            display: inline-block;
+            background-color: red;
+            position: relative;
+            left: 100px;
+        }
+        #fourthdiv{
+            background-color: blueviolet;
+            top: 0px;
+            left: 30px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="firstdiv"></div>
+    <div id="Seconddiv"></div>
+    <div id="thirddiv"></div>
+    <div id="fourthdiv"></div>
+    <div style="height: 400px; border: 3px solid;"></div>
+</body>
+</html>

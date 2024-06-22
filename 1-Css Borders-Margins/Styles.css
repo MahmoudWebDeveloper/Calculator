@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+.myDIV1{
+    margin-left: 100px;
+    color: honeydew;
+    border-style: dashed;
+    color: rgb(201, 118, 118);
+    border-color: red;
+}
+.h1{
+   margin: inherit; 
+}
+
+.myDIV2{
+    width: 200px;
+    margin: auto;
+    color: rgb(2, 137, 255);
+    border-style: double;
+    border-color: rgb(207, 177, 177);
+
+}
+.myDIV3{
+    color:rgba(124, 54, 0, 0.5);
+    border-style: dotted;
+    border-color: red;
+    margin-top: 100px;
+}
+.myDIV4{
+    color: brown;
+    border-style: solid;
+    border-color: red;
+    margin: 100px 0 0 0;
+}

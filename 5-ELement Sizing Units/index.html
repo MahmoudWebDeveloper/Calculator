@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <!-- Link to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS styles -->
+    <style>
+        /* Set the font-size of the root element to 16px */
+        html {
+            font-size: 16px;
+        }
+
+        /* Set the font-family of the body element to Arial */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set the background-color of the container element to light gray */
+        .container {
+            background-color: #f0f0f0;
+        }
+
+        /* Set the margin and padding of the row element to 20px */
+        .row {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Set the border and border-radius of the col element to 1px solid black and 10px */
+        .col {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        /* Set the text-align of the h1 element to center */
+        h1 {
+            text-align: center;
+        }
+
+        /* Set the font-size of the h3 element to 1.5rem */
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        /* Set the font-size of the p element to 12pt */
+        p {
+            font-size: 12pt;
+        }
+
+        /* Set the width and height of the div with id square-px to 100px by 100px */
+        #square-px {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Set the width and height of the div with id square-vw to 10vw by 10vw */
+        #square-vw {
+            width: 10vw;
+            height: 10vw;
+        }
+
+        /* Set the width and height of the div with id square-vh to 10vh by 10vh */
+        #square-vh {
+            width: 10vh;
+            height: 10vh;
+        }
+
+        #square-vh-vw {
+            width: 10vh;
+            height: 10vh;
+        }
+
+        /* Set the background-color of the div with class square to green */
+        .square {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS Units</h1>
+        <div class="row">
+            <div class="col">
+                <h3>Examples of px, pt, em, and rem</h3>
+                <p>The following elements have different font-sizes using px, pt, em, and rem units. You can see how
+                    they look on different devices and screen sizes by resizing your browser window or using the
+                    developer tools.</p>
+                <p style="font-size: 20px;">This paragraph has a font-size of 20px.</p>
+                <p style="font-size: 14pt;">This paragraph has a font-size of 14pt.</p>
+                <p style="font-size: 2em;">This paragraph has a font-size of 2em.</p>
+                <p style="font-size: 1.5rem;">This paragraph has a font-size of 1.5rem.</p>
+            </div>
+            <div class="col">
+                <h3>Examples of vw and vh</h3>
+                <p>The following elements have different widths and heights using vw and vh units. You can see how they
+                    change on different devices and screen sizes by resizing your browser window or using the developer
+                    tools.</p>
+                <div id="square-px" class="square"></div>
+                <p>This square has a width and height of 100px.</p>
+                <div id="square-vw" class="square"></div>
+                <p>This square has a width and height of 10vw.</p>
+                <div id="square-vh" class="square"></div>
+                <p>This square has a width and height of 10vh.</p>
+                <div id="square-vh-vw" class="square"></div>
+                <p>This square has a width of 10 vw and height of 10vh.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div, span{
+            display:inline-block;
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        .red{
+            background-color: red;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 5;
+        }
+        .blue{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: blue;
+            z-index: 4;
+        }
+        .black{
+            z-index: 3;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background-color: black;
+        }
+        .gray{
+            z-index: 2;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: gray;
+        }
+        .orange{
+            z-index: 1;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+    <span class="gray"></span>
+    <span class="orange"></span>
+</body>
+</html>

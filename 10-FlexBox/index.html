@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        header{
+            text-align: center;
+            background-color: #212121;
+            color: white;
+            padding: 20px;
+        }
+        footer{
+            text-align: center;
+            background-color: #212121;
+            color: white;
+            padding: 5px;
+        }
+        .container{
+            border: 1px solid b;;
+            max-width: 800px;
+            margin: auto;
+        }
+        main{
+            padding: 1vw;
+        }
+        .flex-container > *{
+            width: 150px;
+            height: 150px;
+            border: solid 2px black;
+            line-height: 150px;
+            text-align: center;
+        }
+        .flex-container{
+            overflow: hidden;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flexbox Website</h1>
+        </header>
+        <main>
+            <p>Flexbox is a CSS layout module that makes it easier to create flexible and responsive layouts.</p>
+            <div class="flex-container">
+                <!-- This is the flex container that contains four flex items -->
+                <div style="background-color: rgb(210, 59, 59); color: aliceblue;">Item 1</div>
+                <div style="background-color: rgb(104, 78, 233); color: aliceblue;">Item 2</div>
+                <div style="background-color: rgb(35, 189, 63); color: aliceblue;">Item 3</div>
+                <div style="background-color: rgb(210, 59, 155); color: aliceblue;">Item 4</div>
+            </div>
+        </main>
+        <footer>
+            &copy; 2023 CN
+        </footer>
+    </div>
+</body>
+</html>

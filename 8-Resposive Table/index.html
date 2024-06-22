@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        table{
+            color: white;
+            border: solid;
+            margin: auto;
+            width: 40vw;
+            height: 40vw;
+            text-align: center;
+            font-size: 5vw;
+        }
+        th{
+            border: solid 0.5vw;
+            background-color: rgb(112, 23, 23);
+        }
+        td{
+            border: solid 0.5vw;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+        td:hover{
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Colors Table</th>
+        </tr>
+        <tr>
+            <td class="red">Red</td>
+            <td class="blue">Blue</td>
+        </tr>
+        <tr>
+            <td class="orange">Orange</td>
+            <td class="green">Green</td>
+        </tr>
+    </table>
+</body>
+</html>
